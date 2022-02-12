@@ -1,0 +1,29 @@
+#RELATION BETWEEN TWO NUMBERS
+a=int(input('enter first number:'))
+b=int(input('enter second number:'))
+if a==b:
+    print('two numbers are equal')
+else:
+    print('two numbers are not equal')
+    if a>b:
+      print('first number is greaterthan second number')
+    else:
+      print('first number is lesserthan second number')
+---------- ----- -----    -----------------------------------
+OUTPUT:
+enter first number:10
+enter second number:10
+two numbers are equal
+-----------------------------
+2)
+enter first number:10
+enter second number:9
+two numbers are not equal
+'first number is greaterthan second number
+------------------------------------------------------
+3)
+enter first number:9
+enter second number:10
+two numbers are not equal
+'first number is lesserthan second number
+
