@@ -1,0 +1,37 @@
+chillipow=100
+salt=120
+blackgr=120
+oilpac=100
+redgr=153
+c=(input("enter cname"))
+p=int(input("enter cphno"))
+cpq=int(input("enter no of chillipow packets:"))
+spq=int(input("enter no of salt packets:"))
+bpq=int(input("enter no of blackgr packets:"))
+opq=int(input("enter no of oilpac packets:"))
+rgq=int(input("enter no of redgr packets:"))
+bill=(cpq*chillipow)+(spq*salt)+(bpq*blackgr)+(opq*oilpac)+(rgq*redgr)
+if bill>5000:
+    disc=(bill*10)/100
+elif bill>3000:
+    disc=(bill*80)/100
+elif bill>2000:
+    disc=(bill*5)/100
+elif bill<1000:
+    disc=(bill*3)/100
+if bill>3000:
+    tax=(bill*10)/100
+else:
+    tax=(bill*18)/100
+mainbill=bill-disc+tax
+print("mainbill:",mainbill)
+OUTPUT:
+"enter cname:pravallika
+enter cphno:647565
+enter no of chillipow packets:6
+enter no of salt packets:6
+ enter no of blackgr packets:1   
+ enter no of oilpac packets:5
+ enter no of redgr packets:3
+ mainbill:2710.87000000000003
+    
